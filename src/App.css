@@ -30,7 +30,17 @@ body.dark {
 }
 
 .title {
-  color: #000; 
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.light .title {
+  color: black;
+}
+
+body.dark .title {
+  color: white;
 }
 
 .filters button {
