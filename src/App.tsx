@@ -53,7 +53,7 @@ function App() {
     }
 
     const newTodo: Todo = {
-      id: Date.now(), // aseguramos que no choque con IDs de la API
+      id: Date.now(), 
       text,
       completed: false,
     }
@@ -61,7 +61,7 @@ function App() {
     const updatedTodos = [...todos, newTodo]
     setTodos(updatedTodos)
 
-    // actualizar localStorage con la nueva tarea personalizada
+    
     const stored = localStorage.getItem('customTodos')
     const currentCustomTodos: Todo[] = stored ? JSON.parse(stored) : []
     localStorage.setItem('customTodos', JSON.stringify([...currentCustomTodos, newTodo]))
