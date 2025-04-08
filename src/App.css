@@ -34,11 +34,9 @@ body.dark {
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 body.light .title {
   color: black;
 }
-
 body.dark .title {
   color: white;
 }
